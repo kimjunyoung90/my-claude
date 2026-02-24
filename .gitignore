@@ -1,0 +1,8 @@
+# 기본: 모든 파일 무시
+*
+
+# Skills만 추적
+!.gitignore
+!README.md
+!skills/
+!skills/**
