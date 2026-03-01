@@ -1,7 +1,7 @@
 ---
 name: commit
 description: 변경사항을 분석하여 커밋 템플릿 형식으로 commit
-disable-model-invocation: true
+disable-model-invocation: false
 argument-hint: "[files...]"
 ---
 
@@ -54,7 +54,8 @@ You are helping create a git commit using the commit message template.
 
 **본문 작성 기준:**
 - 변경 파일이 3개 이상이거나 변경 내용이 복잡한 경우 본문 추가
-- "무엇을 변경했는지", "왜 변경했는지" 설명
+- "무엇을 변경했는지"는 diff로 확인 가능하므로 본문에 포함하지 않는다
+- "왜 변경했는지"만 작성한다
 - 하이픈(`-`)을 사용한 불렛 형식으로 작성
 
 ## 4. 생성된 메시지 확인 후 커밋 실행
